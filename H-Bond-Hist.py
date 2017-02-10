@@ -18,7 +18,7 @@ parser = argparse.ArgumentParser(description='''Calculates histograms for each t
 parser.add_argument('-start',   help="Line number corresponding to start of average. 0 to go from SOF+2", default=int(0))
 parser.add_argument('-end',   help="Line number corresponding to end of average. 0 to go to EOF",default=int(0))
 parser.add_argument('-plot', help="What to plot: [0] All [1] lliner, [2] ring, [3] branch, [4] cluster", default=int(0))
-parser.add_argument('-bins', help="Number of bins for the histogram", default=int(10))
+parser.add_argument('-bins', help="Binning Options: #,auto,fd,doane,scott,rice,sturges,sqrt",default=int(10))
 parser.add_argument('-save', help="[0] for False [1] for True", default=int(0))
 args=parser.parse_args();
 
